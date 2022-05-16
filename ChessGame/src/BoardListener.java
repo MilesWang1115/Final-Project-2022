@@ -29,8 +29,8 @@ public class BoardListener implements ActionListener,
     }
 
     private PiecesLocation getLocation(MouseEvent e) {
-        int x = e.getX() / board.getPieceSize();
-        int y = e.getY() / board.getPieceSize();
+        int x = (e.getX()-12) / board.getPieceSize();
+        int y = (e.getY()-12) / board.getPieceSize();
         if(x < 0 || x > 7 || y < 0 || y > 7)
             return null;
         PiecesLocation loc = new PiecesLocation(x, 7 - y);
@@ -48,6 +48,8 @@ public class BoardListener implements ActionListener,
         if(busy)
             return;
         PiecesLocation loc = getLocation(e);
+        if(loc == null)
+            return;
         if(clicks == 1 && loc.equals(pieceLocation))
             return;
         if(loc == null)
@@ -117,10 +119,10 @@ public class BoardListener implements ActionListener,
                             board, status.note, "GAME OVER", JOptionPane.INFORMATION_MESSAGE);
                     System.exit(0);
                 }
-                PiecesAleration aleration = status.get(0);
-                if(aleration == null)
+                PiecesAlteration alteration = status.get(0);
+                if(alteration == null)
                     return;
-                if(aleration.action == PiecesAction.Illegal) {
+                if(alteration.action == PiecesAction.Illegal) {
                     JOptionPane.showMessageDialog(
                             board, "您的走棋违反了规定", "小心哦", JOptionPane.WARNING_MESSAGE);
                     return;
@@ -157,8 +159,8 @@ public class BoardListener implements ActionListener,
             }
             if(status.size() == 0) //Nothing to be prepared
                 break;
-            PiecesAleration aleration = status.get(0);
-            switch(aleration.action) {
+            PiecesAlteration alteration = status.get(0);
+            switch(alteration.action) {
                 case Check:
                     ackCheck = true;
                     PiecesColor color = chess.getEnemyColor();
@@ -170,8 +172,8 @@ public class BoardListener implements ActionListener,
                     JOptionPane.showMessageDialog(
                             board, message, "快完蛋喽", JOptionPane.WARNING_MESSAGE);
                     //Save warning info
-                    red = aleration.piece.location;
-                    yellow = aleration.location;
+                    red = alteration.piece.location;
+                    yellow = alteration.location;
                     break;
                 case Checkmate:
                 case PerpetualCheck:
@@ -191,7 +193,7 @@ public class BoardListener implements ActionListener,
                     endGame = true;
                     break;
                 case Promotion:
-                    //Let user to choose a new piece
+                    //Let user choose a new piece
                     Object[] pieces = { "Queen", "Rook", "Bishop", "Knight" };
                     String name = null;
                     while(name == null)
@@ -201,7 +203,7 @@ public class BoardListener implements ActionListener,
                     //Promote Pawn
                     //Term: 2-(3)
                     try {
-                        status = chess.tryPromotionPawn((Pawn)aleration.piece, name);
+                        status = chess.tryPromotionPawn((Pawn)alteration.piece, name);
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -215,14 +217,18 @@ public class BoardListener implements ActionListener,
                 break;
             }
         }
-        //Now user can operating mouse again
+        //Now user can operate mouse again
         busy = false;
         board.paintBoard();
         //Draw warning
-        if(red != null)
+        if(red != null) {
             board.drawSelection(red, Color.RED);
-        if(yellow != null)
+            lastLocation = null;
+        }
+        if(yellow != null) {
             board.drawSelection(yellow, Color.ORANGE);
+            lastLocation = null;
+        }
         if(endGame)
             System.exit(0);
     }

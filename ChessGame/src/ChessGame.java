@@ -1,16 +1,11 @@
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
-import javax.swing.JFileChooser;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
-import javax.swing.SwingUtilities;
+import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import javax.swing.JFrame;
 
-import java.awt.BorderLayout;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ComponentAdapter;
@@ -155,6 +150,7 @@ public class ChessGame {
         mainFrame.add(mainLabel, BorderLayout.SOUTH);
         //Display frame
         mainFrame.setVisible(true);
+        mainFrame.setIconImage(new ImageIcon("window_image.jpg").getImage());
     }
 
     public static void main(String[] args) throws Exception {

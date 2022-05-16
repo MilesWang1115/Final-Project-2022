@@ -2,6 +2,8 @@ public class King extends Piece {
 
     King(Chess chess, PiecesColor color, PiecesLocation loc, boolean moved) {
         super(chess, color, PiecesName.King, loc, moved);
+        //trace = true;
+        //verbose = true;
     }
 
     private boolean validTo(PiecesLocation newLoc) {
@@ -98,7 +100,7 @@ public class King extends Piece {
         int col = location.col + step;
         Piece attacker;
         while(col != rook.location.col) {
-            //Try move on the path to find out potential attacker.
+            //Try to move on the path to find out potential attacker.
             attacker = chess.simulateAttack(this, new PiecesLocation(col, location.row));
             if(attacker != null) {
                 if(trace)
@@ -106,7 +108,7 @@ public class King extends Piece {
                 return false;
             }
             col += step;
-            if(col < 1 || col > 8) {
+            if(col < 0 || col > 7) {
                 System.out.println("King:tryCastlingMove(): Out of board during checking:" + col + ", Step:" + step);
                 return false;
             }
@@ -192,7 +194,7 @@ public class King extends Piece {
             return false;
         }
 
-        //A King should not going to feed the enemy!
+        //A King should not go to feed the enemy!
         //So make a simulation
         Piece attacker = chess.simulateAttack(this, newLoc);
         if(attacker != null) {

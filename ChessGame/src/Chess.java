@@ -167,6 +167,8 @@ public class Chess {
     //Game controller: Promotion Pawn
     private Pawn getPromotionPawn() {
         for(Piece p:pieces) {
+            if(!p.visible)
+                continue;
             if(p.name != PiecesName.Pawn || p.color != thisColor())
                 continue;
             if(p.color == PiecesColor.White && p.location.row == 7) {
@@ -197,7 +199,7 @@ public class Chess {
                 new_piece.toString()));
         //Send back the status
         Status status = new Status();
-        status.add(new PiecesAleration(
+        status.add(new PiecesAlteration(
                 new_piece,
                 pawn.location,
                 PiecesAction.Promotion));
@@ -232,7 +234,7 @@ public class Chess {
             boolean you_are_inside_man = true;
             if(inside_man.size() == 1) {
                 //If there is ONLY one attacker, I should compare the location of attacker and newLoc
-                PiecesAleration pa = inside_man.get(0);
+                PiecesAlteration pa = inside_man.get(0);
                 Piece attacker = pa.piece;
                 if(attacker.location.equals(newLoc)) {
                     //Really? Are you going to eat this attacker?
@@ -256,7 +258,7 @@ public class Chess {
                 //You are an Inside Man!
                 if (trace)
                     System.out.println("tryMove(): " + piece + " is an INSIDE MAN!");
-                status.add(new PiecesAleration(
+                status.add(new PiecesAlteration(
                         piece,
                         newLoc,
                         PiecesAction.Illegal));
@@ -266,24 +268,24 @@ public class Chess {
         piece.location = pieceLoc;
         //Try move/eat piece
         if(piece.tryEatAt(newLoc, false)) {	// Capture
-            status.add(new PiecesAleration(
+            status.add(new PiecesAlteration(
                     capturedPiece,
                     capturedPiece.location,
                     PiecesAction.Capture));
-            status.add(new PiecesAleration(
+            status.add(new PiecesAlteration(
                     piece,
                     pieceLoc,
                     PiecesAction.Move
             ));
         }
         else if(piece.tryMoveTo(newLoc, false)) { // Move
-            status.add(new PiecesAleration(
+            status.add(new PiecesAlteration(
                     piece,
                     pieceLoc,
                     PiecesAction.Move));
         }
         else {	//Illegal Move
-            status.add(new PiecesAleration(
+            status.add(new PiecesAlteration(
                     piece,
                     newLoc,
                     PiecesAction.Illegal));
@@ -298,12 +300,14 @@ public class Chess {
         }
         //Find out check piece
         for(Piece p:pieces) {
+            if(!p.visible)
+                continue;
             if(p.color == myColor)
                 continue;
             //Let me have a look without eating!
             if(p.tryEatAt(loc, true)) {
                 if(trace)
-                    System.out.println("tryAttack(): " + p + " -X-> " + loc);
+                    System.out.println("tryAttack(): " + p + " ---E " + loc);
                 return p;
             }
         }
@@ -365,10 +369,10 @@ public class Chess {
             return status;
         }
         if(trace)
-            System.out.println("tryCheck(): " + attacker + " -X-> " + enemy_king);
+            System.out.println("tryCheck(): " + attacker + " ---E " + enemy_king);
 
         //Add check status
-        status.add(new PiecesAleration(
+        status.add(new PiecesAlteration(
                 attacker,
                 enemy_king.location,
                 PiecesAction.Check));
@@ -387,7 +391,7 @@ public class Chess {
             if(trace)
                 System.out.println("tryNextTurns(): Before next turns, perform Pormotion Pawn.");
             status = new Status();
-            status.add(new PiecesAleration(
+            status.add(new PiecesAlteration(
                     pawn,
                     pawn.location,
                     PiecesAction.Promotion));
@@ -403,10 +407,10 @@ public class Chess {
                 if(isCheckmate()) {
                     if(trace)
                         System.out.println("tryNextTurns(): Checkmate! " + enemy_color + " Lose!");
-                    PiecesAleration pa = status.get(0);
+                    PiecesAlteration pa = status.get(0);
                     status = new Status(true, false, "因为" + enemy_color + "无法'应将'因而输棋",
                             new Result(PiecesAction.Checkmate));
-                    status.add(new PiecesAleration(
+                    status.add(new PiecesAlteration(
                             pa.piece,
                             pa.location,
                             PiecesAction.Checkmate
@@ -427,7 +431,7 @@ public class Chess {
         if(isRepetition()) {
             Piece piece = getKing(enemy_color);
             assert piece != null;
-            status.add(new PiecesAleration(
+            status.add(new PiecesAlteration(
                     piece,
                     piece.location,
                     PiecesAction.Repetition
@@ -458,7 +462,7 @@ public class Chess {
                 status.result = new Result(action);
             }
             assert piece != null;
-            status.add(new PiecesAleration(
+            status.add(new PiecesAlteration(
                     piece,
                     piece.location,
                     action
@@ -476,6 +480,8 @@ public class Chess {
         }
         int total_valid_move = 0;
         for(Piece p:pieces) {
+            if(!p.visible)
+                continue;
             if(p.color != thisColor())
                 continue;
             ArrayList<PiecesLocation> valid_loc = p.findValidMove();
@@ -530,7 +536,7 @@ public class Chess {
                 }
                 Piece piece = getKing(enemy_color);
                 assert piece != null;
-                status.add(new PiecesAleration(
+                status.add(new PiecesAlteration(
                         piece,
                         piece.location,
                         PiecesAction.PerpetualCheck
@@ -731,13 +737,13 @@ public class Chess {
         //Load each logs
         logs = new ArrayList<>();
         while(counter > 0) {
-            String[] parms = br.readLine().split(" ");
+            String[] params = br.readLine().split(" ");
             StringBuilder note = new StringBuilder();
-            for(int i=2; i<parms.length; i++)
-                note.append(parms[i]);
+            for(int i=2; i<params.length; i++)
+                note.append(params[i]);
             logs.add(new PiecesLog(
-                    PiecesColor.valueOf(parms[0]), //Will throw exception if color was invalid
-                    PiecesAction.valueOf(parms[1]),  //Will throw exception if action was error
+                    PiecesColor.valueOf(params[0]), //Will throw exception if color was invalid
+                    PiecesAction.valueOf(params[1]),  //Will throw exception if action was error
                     note.toString()
             ));
             counter--;

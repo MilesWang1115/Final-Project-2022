@@ -16,6 +16,11 @@ public class Pawn extends Piece {
 
     private boolean isForward(PiecesLocation newLoc) {
         int row_offset = newLoc.row-this.location.row;
+        if(row_offset == 0) {
+            if (verbose)
+                System.out.println("Pawn:isForward(): Vertical move only!");
+            return false;
+        }
         if(this.color == PiecesColor.White && row_offset < 0) {
             if(verbose)
                 System.out.println("Pawn:isForward(): Backward not allowed!");

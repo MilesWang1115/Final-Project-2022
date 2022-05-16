@@ -4,14 +4,14 @@ public class Status {
     public boolean endGame;
     public boolean error;
     public String note;
-    private ArrayList<PiecesAleration> alerations;
+    private ArrayList<PiecesAlteration> alterations;
     public Result result;
 
     Status(boolean endGame, boolean error, String note, Result result) {
         this.endGame = endGame;
         this.error = error;
         this.note = note;
-        this.alerations = new ArrayList<>();
+        this.alterations = new ArrayList<>();
         this.result = result;
     }
 
@@ -20,7 +20,7 @@ public class Status {
         this.endGame = false;
         this.error = true;
         this.note = errorNote;
-        this.alerations = null;
+        this.alterations = null;
         this.result = null;
     }
 
@@ -29,24 +29,24 @@ public class Status {
         this.endGame = false;
         this.error = false;
         this.note = "";
-        alerations = new ArrayList<>();
+        alterations = new ArrayList<>();
         this.result = null;
     }
 
-    public void add(PiecesAleration aleration) {
-        if(alerations != null)
-            alerations.add(aleration);
+    public void add(PiecesAlteration alteration) {
+        if(alterations != null)
+            alterations.add(alteration);
     }
 
-    public PiecesAleration get(int index) {
-        if(alerations != null)
-            return alerations.get(index);
+    public PiecesAlteration get(int index) {
+        if(alterations != null)
+            return alterations.get(index);
         return null;
     }
 
     public int size() {
-        if(alerations != null)
-            return alerations.size();
+        if(alterations != null)
+            return alterations.size();
         return 0;
     }
 }
