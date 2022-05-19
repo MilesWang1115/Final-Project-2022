@@ -1,0 +1,40 @@
+8x8
+None
+32
+Black Rook a8 false
+Black Pawn a7 false false
+White Rook a1 false
+White Pawn a2 false false
+Black Knight b8 false
+Black Pawn b7 false false
+White Knight b1 false
+White Pawn b2 false false
+Black Bishop c8 false
+Black Pawn c7 false false
+White Bishop c1 false
+White Pawn c2 false false
+Black Queen d8 false
+Black Pawn d7 false false
+White Queen d1 false
+White Pawn d2 false false
+Black King e8 false
+Black Pawn e5 true true
+White King e1 false
+White Pawn e4 true true
+Black Bishop c5 true
+Black Pawn f7 false false
+White Bishop c4 true
+White Pawn f2 false false
+Black Knight g8 false
+Black Pawn g7 false false
+White Knight g1 false
+White Pawn g2 false false
+Black Rook h8 false
+Black Pawn h7 false false
+White Rook h1 false
+White Pawn h2 false false
+4
+White Move White Pawn e2 false true e4
+Black Move Black Pawn e7 false true e5
+White Move White Bishop f1 false c4
+Black Move Black Bishop f8 false c5

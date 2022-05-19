@@ -81,6 +81,43 @@ public class Board extends JPanel {
         drawLabel("  " + chess.thisColor() + " 请走棋" );
     }
 
+    public void paintBoard2() {
+        Graphics g = this.getGraphics();
+        //Paint the board
+        ArrayList<ArrayList<Piece>> board = chess.getBoard();
+        for(int row=7; row>=0; row--) {
+            //Get a row
+            ArrayList<Piece> row_brd = board.get(row);
+            for(int col=0; col<8; col++) {
+                //Draw grid
+                g.setColor(getColorByLocation(new PiecesLocation(col, row)));
+                int x = col * size + 12;
+                int y = (7 - row) * size + 12;
+                g.fillRect(x, y, size, size);
+                //Draw piece
+                Piece piece = row_brd.get(col);
+                if(piece == null)
+                    continue;
+                Image icon = new ImageIcon(piece.getPieceIconName2()).getImage();
+                g.drawImage(icon, x, y, size, size, this);
+            }
+        }
+        //Paint the coordinate
+        g.setColor(Color.BLACK);
+        for(int col = 1; col <= 8; col++) {
+            g.drawString(alphas[col-1], col * size - size/2 - 4 + 12, 11);
+            g.drawString(alphas[col-1], col * size - size/2 - 4 + 12, 8*size + 24);
+        }
+        for(int row = 1; row <=8; row++) {
+            g.drawString(String.valueOf(9-row), 2, row * size - size/2 + 12);
+            g.drawString(String.valueOf(9-row), 8*size + 13, row * size - size/2 + 12);
+        }
+
+
+        //Show the message
+        drawLabel("  " + chess.thisColor() + " 请走棋" );
+    }
+
     public void drawSelection(PiecesLocation loc, Color color ) {
         if(loc == null)
             return;

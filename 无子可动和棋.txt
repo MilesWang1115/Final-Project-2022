@@ -1,0 +1,145 @@
+8x8
+White
+3
+White Bishop b6 true
+Black King a8 true
+White King d4 true
+138
+White Move WhitePawnd2falsetrued4
+Black Move BlackPawnd7falsetrued5
+White Move WhitePawne2falsetruee4
+Black Move BlackPawne7falsetruee5
+White Move WhitePawnf2falsefalsef3
+Black Move BlackPawnf7falsefalsef6
+White Move WhitePawnc2falsefalsec3
+Black Move BlackPawnc7falsefalsec6
+White Move WhiteKnightg1falseh3
+Black Move BlackKnightg8falseh6
+White Move WhitePawng2falsetrueg4
+Black Move BlackPawng7falsetrueg5
+White Move WhiteBishopf1falseg2
+Black Move BlackBishopf8falseg7
+White Move WhiteKnightb1falsea3
+Black Move BlackKnightb8falsea6
+White Move WhitePawnb2falsetrueb4
+Black Move BlackPawnb7falsetrueb5
+White Move WhiteBishopc1falseb2
+Black Move BlackBishopc8falseb7
+White Move WhiteQueend1falsed2
+Black Move BlackQueend8falsed7
+White Capture Black Pawn b5 true true
+White Move White Knight a3 true b5
+Black Capture White Pawn b4 true true
+Black Move Black Knight a6 true b4
+White Capture Black Knight b4 true
+White Move White Pawn c3 true false b4
+Black Capture White Knight b5 true
+Black Move Black Pawn c6 true false b5
+White Capture Black Pawn e5 true true
+White Move White Pawn d4 true false e5
+Black Capture White Pawn e4 true true
+Black Move Black Pawn d5 true false e4
+White Capture Black Pawn f6 true false
+White Move White Pawn e5 true false f6
+Black Capture White Pawn f3 true false
+Black Move Black Pawn e4 true false f3
+White Capture Black Pawn g5 true true
+White Move White Knight h3 true g5
+Black Capture White Pawn g4 true true
+Black Move Black Knight h6 true g4
+White Capture Black Pawn f3 true false
+White Move White Bishop g2 true f3
+Black Capture White Pawn f6 true false
+Black Move Black Bishop g7 true f6
+White Capture Black Pawn h7 false false
+White Move White Knight g5 true h7
+Black Capture White Pawn h2 false false
+Black Move Black Knight g4 true h2
+White Capture Black Knight h2 true
+White Move White Rook h1 false h2
+Black Capture White Knight h7 true
+Black Move Black Rook h8 false h7
+White Move White Rook h2 true h6
+Black Move Black Rook h7 true f7
+White Capture Black Bishop f6 true
+White Move White Rook h6 true f6
+Black Move Black Rook f7 true g7
+White Move White Rook f6 true b6
+Black Move Black Rook g7 true f7
+White Capture Black Pawn b5 true false
+White Move White Rook b6 true b5
+Black Capture White Bishop f3 true
+Black Move Black Rook f7 true f3
+White Move White Rook b5 true a5
+Black Move Black Rook f3 true b3
+White Capture Black Pawn a7 false false
+White Move White Rook a5 true a7
+Black Capture White Pawn b4 true false
+Black Move Black Rook b3 true b4
+White Capture Black Rook a8 false
+White Move White Rook a7 true a8
+White Check White Rook a8 true Black King e8 false
+White Check White Rook a8 true Black King e8 false
+Black Move Black King e8 false e7
+White Move White Rook a8 true b8
+Black Move Black Rook b4 true a4
+White Capture Black Bishop b7 true
+White Move White Rook b8 true b7
+Black Capture White Pawn a2 false false
+Black Move Black Rook a4 true a2
+White Capture Black Queen d7 true
+White Move White Rook b7 true d7
+White Check White Rook d7 true Black King e7 true
+Black Move Black King e7 true e8
+White Move White Rook d7 true d5
+Black Capture White Rook a1 false
+Black Move Black Rook a2 true a1
+Black Check Black Rook a1 true White King e1 false
+White Move White King e1 false e2
+Black Move Black Rook a1 true d1
+White Move White Rook d5 true d3
+Black Capture White Queen d2 true
+Black Move Black Rook d1 true d2
+Black Check Black Rook d2 true White King e2 true
+Black Check Black Rook d2 true White King e2 true
+Black Check Black Rook d2 true White King e2 true
+Black Check Black Rook d2 true White King e2 true
+Black Check Black Rook d2 true White King e2 true
+Black Check Black Rook d2 true White King e2 true
+Black Check Black Rook d2 true White King e2 true
+Black Check Black Rook d2 true White King e2 true
+Black Check Black Rook d2 true White King e2 true
+Black Check Black Rook d2 true White King e2 true
+White Move White King e2 true e1
+Black Capture White Rook d3 true
+Black Move Black Rook d2 true d3
+White Move White Bishop b2 true d4
+Black Move Black Rook d3 true d1
+Black Check Black Rook d1 true White King e1 true
+Black Check Black Rook d1 true White King e1 true
+Black Check Black Rook d1 true White King e1 true
+Black Check Black Rook d1 true White King e1 true
+Black Check Black Rook d1 true White King e1 true
+Black Check Black Rook d1 true White King e1 true
+Black Check Black Rook d1 true White King e1 true
+Black Check Black Rook d1 true White King e1 true
+Black Check Black Rook d1 true White King e1 true
+Black Check Black Rook d1 true White King e1 true
+Black Check Black Rook d1 true White King e1 true
+Black Check Black Rook d1 true White King e1 true
+Black Check Black Rook d1 true White King e1 true
+Black Check Black Rook d1 true White King e1 true
+Black Check Black Rook d1 true White King d1 true
+White Capture Black Rook d1 true
+White Move White King e1 true d1
+Black Move Black King e8 true d8
+White Move White Bishop d4 true c5
+Black Move Black King d8 true c8
+White Move White Bishop c5 true b6
+Black Move Black King c8 true b8
+White Move White King d1 true d2
+Black Move Black King b8 true a8
+White Move White King d2 true d3
+Black Move Black King a8 true b8
+White Move White King d3 true d4
+Black Move Black King b8 true a8

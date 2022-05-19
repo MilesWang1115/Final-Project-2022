@@ -22,7 +22,7 @@ public class ChessGame {
     static int cellSize;
 
     private static String chooseFileName(boolean save) {
-        JFileChooser file_chooser=new JFileChooser();
+        JFileChooser file_chooser = new JFileChooser();
         file_chooser.setFileFilter(new FileNameExtensionFilter("文本文件","txt"));
         file_chooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
         int res;
@@ -125,13 +125,40 @@ public class ChessGame {
             }
         });
         menu.add(c_item);
+        //Skin1
+        JMenuItem a1_item = new JMenuItem("切换皮肤1");
+        a1_item.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                board.paintBoard();
+            }
+        });
+        menu.add(a1_item);
+        //Skin2
+        JMenuItem a2_item = new JMenuItem("切换皮肤2");
+        a2_item.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                board.paintBoard2();
+            }
+        });
+        menu.add(a2_item);
+        //Stop bgm
+        JMenuItem v_item = new JMenuItem("静音");
+        v_item.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                chess.bgm.stop();
+            }
+        });
+        menu.add(v_item);
         return menu;
     }
 
     private static void layoutFrame(Board board) {
-        mainFrame = new JFrame("Water Chess");
+        mainFrame = new JFrame("Chess of Group Castling 欢迎使用”王车易位组“的国际象棋!");
         //Piece icon size 150x150 -> 75x75
-        int width = board.getPieceSize() * 8 + 24;
+        int width = board.getPieceSize() * 8 + 40;
         mainFrame.setSize(width, width+70);
         mainFrame.setResizable(true);
         //Add close button
@@ -146,10 +173,11 @@ public class ChessGame {
         jmb.setVisible(true);
         mainFrame.setJMenuBar(jmb);
         //Add Label
-        mainLabel = new JLabel("欢迎使用注水的国际象棋");
-        mainFrame.add(mainLabel, BorderLayout.SOUTH);
+        mainLabel = new JLabel("欢迎使用”王车易位组“的国际象棋");
+        mainFrame.add(mainLabel, BorderLayout.NORTH);
         //Display frame
         mainFrame.setVisible(true);
+        //Set Window image
         mainFrame.setIconImage(new ImageIcon("window_image.jpg").getImage());
     }
 
@@ -178,11 +206,11 @@ public class ChessGame {
             public void componentResized(ComponentEvent e) {
                 //Find the size
                 if(mainFrame.getWidth() < mainFrame.getHeight()-70)
-                    cellSize = (mainFrame.getWidth()-24) / 8;
+                    cellSize = (mainFrame.getWidth()-40) / 8;
                 else
-                    cellSize = (mainFrame.getHeight()-70-24) / 8;
+                    cellSize = (mainFrame.getHeight()-70-40) / 8;
                 board.setPieceSize(cellSize);
-                mainFrame.setSize(cellSize*8+24, cellSize*8+70+24);
+                mainFrame.setSize(cellSize*8+40, cellSize*8+70+40);
                 SwingUtilities.invokeLater(new Runnable() {
                     @Override
                     public void run() {
@@ -191,18 +219,6 @@ public class ChessGame {
                 });
             }
         });
-        //Play background music
-        Clip bgm;
-        AudioInputStream ais;
-        try {
-            bgm = AudioSystem.getClip();
-            ais = AudioSystem.getAudioInputStream(new File("chess-bgm.wav"));
-            bgm.open(ais);
-            bgm.start();
-            bgm.loop(Clip.LOOP_CONTINUOUSLY);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
         //Waiting for the end of game
         while(true) {
             try {

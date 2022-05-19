@@ -1,0 +1,109 @@
+8x8
+White
+14
+Black Rook a8 false
+Black Pawn a7 false false
+Black Pawn b7 false false
+White Knight g5 true
+Black Queen c7 true
+White Queen b8 true
+Black King h8 true
+White King g1 true
+Black Bishop f8 true
+White Bishop c4 true
+Black Pawn g7 false false
+White Pawn g2 false false
+Black Pawn h7 false false
+White Pawn h3 true false
+91
+White Move White Knight g1 false f3
+Black Move Black Knight g8 false f6
+White Move White Pawn e2 false true e4
+Black Move Black Pawn e7 false true e5
+White Move White Bishop f1 false c4
+Black Move Black Bishop f8 false c5
+White Move White Rook h1 false g1
+White Move White King e1 false h1
+Black Move Black Rook h8 false g8
+Black Move Black King e8 false h8
+White Move White Rook g1 true e1
+Black Move Black Rook g8 true e8
+White Capture Black Pawn e5 true true
+White Move White Knight f3 true e5
+Black Capture White Knight e5 true
+Black Move Black Rook e8 true e5
+White Move White Rook e1 true e3
+Black Capture White Pawn e4 true true
+Black Move Black Rook e5 true e4
+White Capture Black Rook e4 true
+White Move White Rook e3 true e4
+Black Move Black Bishop c5 true f8
+White Move White Knight b1 false c3
+Black Capture White Rook e4 true
+Black Move Black Knight f6 true e4
+White Capture Black Knight e4 true
+White Move White Knight c3 true e4
+Black Move Black Queen d8 false f6
+White Move White Pawn h2 false false h3
+Black Move Black Queen f6 true a6
+White Move White King h1 true g1
+Black Move Black Pawn f7 false true f5
+White Move White Pawn f2 false true f4
+Black Capture White Pawn a2 false false
+Black Move Black Queen a6 true a2
+White Move White Queen d1 false h5
+Black Capture White Rook a1 false
+Black Move Black Queen a2 true a1
+White Capture Black Pawn f5 true true
+White Move White Queen h5 true f5
+Black Capture White Bishop c1 false
+Black Move Black Queen a1 true c1
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+White Move White King g1 true h2
+Black Capture White Pawn c2 false false
+Black Move Black Queen c1 true c2
+White Move White King h2 true g1
+Black Capture White Pawn b2 false false
+Black Move Black Queen c2 true b2
+White Move White Knight e4 true g5
+Black Capture White Pawn d2 false false
+Black Move Black Queen b2 true d2
+White Capture Black Pawn d7 false false
+White Move White Queen f5 true d7
+Black Capture White Pawn f4 true true
+Black Move Black Queen d2 true f4
+White Capture Black Pawn c7 false false
+White Move White Queen d7 true c7
+Black Move Black Queen f4 true d6
+White Capture Black Bishop c8 false
+White Move White Queen c7 true c8
+Black Move Black Queen d6 true c7
+White Capture Black Knight b8 false
+White Move White Queen c8 true b8

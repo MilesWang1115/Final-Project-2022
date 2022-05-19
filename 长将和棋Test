@@ -1,384 +1,109 @@
 8x8
-Black
-7
-Black Rook c1 true
-Black Pawn a4 true false
-Black Pawn b4 true false
-Black King h5 true
-White King d3 true
-White Knight f6 true
-White Rook g4 true
-373
-White Move WhitePawnd2falsetrued4
-Black Move BlackPawna7falsetruea5
-White Move WhitePawnc2falsetruec4
-Black Move BlackPawnb7falsetrueb5
-White Move WhitePawne2falsetruee4
-Black Move BlackPawnd7falsetrued5
-White Move WhiteQueend1falseh5
-White Check WhiteQueenh5trueBlackKinge8false
-Black Move BlackPawne7falsetruee5
-White Capture BlackPawne5truetrue
-White Move WhiteQueenh5truee5
-White Check WhiteQueene5trueBlackKinge8false
-White Check WhiteQueene5trueBlackKinge8false
-White Check WhiteQueene5trueBlackKinge8false
-White Check WhiteQueene5trueBlackKinge8false
-White Check WhiteQueene5trueBlackKinge8false
-White Check WhiteQueene5trueBlackKinge8false
-White Check WhiteQueene5trueBlackKinge8false
-White Check WhiteQueene5trueBlackKinge8false
-White Check WhiteQueene5trueBlackKinge8false
-White Check WhiteQueene5trueBlackKinge8false
-White Check WhiteQueene5trueBlackKinge8false
-White Check WhiteQueene5trueBlackKinge8false
-Black Move BlackBishopf8falsee7
-White Capture BlackPawng7falsefalse
-White Move WhiteQueene5trueg7
-Black Move BlackPawnh7falsetrueh5
-White Capture BlackKnightg8false
-White Move WhiteQueeng7trueg8
-White Check WhiteQueeng8trueBlackKinge8false
-White Check WhiteQueeng8trueBlackKinge8false
-White Check WhiteQueeng8trueBlackKinge8false
-White Check WhiteQueeng8trueBlackKinge8false
-White Check WhiteQueeng8trueBlackKinge8false
-White Check WhiteQueeng8trueBlackKinge8false
-White Check WhiteQueeng8trueBlackKinge8false
-White Check WhiteQueeng8trueBlackKinge8false
-White Check WhiteQueeng8trueBlackKinge8false
-White Check WhiteQueeng8trueBlackKinge8false
-White Check WhiteQueeng8trueBlackKinge8false
-White Check WhiteQueeng8trueBlackKinge8false
-White Check WhiteQueeng8trueBlackKinge8false
-White Check WhiteQueeng8trueBlackKinge8false
-White Check WhiteQueeng8trueBlackKinge8false
-White Check WhiteQueeng8trueBlackKinge8false
-White Check WhiteQueeng8trueBlackKinge8false
-White Check WhiteQueeng8trueBlackKinge8false
-White Check WhiteQueeng8trueBlackKinge8false
-White Check WhiteQueeng8trueBlackKinge8false
-White Check WhiteQueeng8trueBlackKinge8false
-White Check WhiteQueeng8trueBlackKinge8false
-Black Move BlackBishope7truef8
-White Capture BlackRookh8false
-White Move WhiteQueeng8trueh8
-Black Move BlackKnightb8falsec6
-White Move WhiteQueenh8trueh7
-Black Move BlackKnightc6truee7
-White Capture BlackPawnf7falsefalse
-White Move WhiteQueenh7truef7
-White Check WhiteQueenf7trueBlackKinge8false
-White Check WhiteQueenf7trueBlackKinge8false
-White Check WhiteQueenf7trueBlackKinge8false
-White Check WhiteQueenf7trueBlackKinge8false
-White Check WhiteQueenf7trueBlackKinge8false
-White Check WhiteQueenf7trueBlackKinge8false
-White Check WhiteQueenf7trueBlackKinge8false
-White Check WhiteQueenf7trueBlackKinge8false
-White Check WhiteQueenf7trueBlackKinge8false
-White Check WhiteQueenf7trueBlackKinge8false
-White Check WhiteQueenf7trueBlackKinge8false
-White Check WhiteQueenf7trueBlackKinge8false
-White Check WhiteQueenf7trueBlackKinge8false
-White Check WhiteQueenf7trueBlackKinge8false
-White Check WhiteQueenf7trueBlackKinge8false
-White Check WhiteQueenf7trueBlackKinge8false
-White Check WhiteQueenf7trueBlackKinge8false
-White Check WhiteQueenf7trueBlackKinge8false
-White Check WhiteQueenf7trueBlackKinge8false
-White Check WhiteQueenf7trueBlackKinge8false
-White Check WhiteQueenf7trueBlackKinge8false
-White Check WhiteQueenf7trueBlackKinge8false
-White Check WhiteQueenf7trueBlackKinge8false
-White Check WhiteQueenf7trueBlackKinge8false
-Black Move BlackKinge8falsed7
-White Capture BlackKnighte7true
-White Move WhiteQueenf7truee7
-White Check WhiteQueene7trueBlackKingd7true
-White Check WhiteQueene7trueBlackKingd7true
-White Check WhiteQueene7trueBlackKingd7true
-White Check WhiteQueene7trueBlackKingd7true
-White Check WhiteQueene7trueBlackKingd7true
-White Check WhiteQueene7trueBlackKingd7true
-White Check WhiteQueene7trueBlackKingd7true
-White Check WhiteQueene7trueBlackKingd7true
-White Check WhiteQueene7trueBlackKingd7true
-White Check WhiteQueene7trueBlackKingd7true
-White Check WhiteQueene7trueBlackKingd7true
-White Check WhiteQueene7trueBlackKingd7true
-Black Capture WhiteQueene7true
-Black Move BlackQueend8falsee7
-White Move WhitePawne4truefalsee5
-Black Move BlackKingd7truee8
-White Move WhitePawne5truefalsee6
-Black Capture WhitePawne6truefalse
-Black Move BlackQueene7truee6
-Black Check BlackQueene6trueWhiteKinge1false
-Black Check BlackQueene6trueWhiteKinge1false
-Black Check BlackQueene6trueWhiteKinge1false
-Black Check BlackQueene6trueWhiteKinge1false
-Black Check BlackQueene6trueWhiteKinge1false
-Black Check BlackQueene6trueWhiteKinge1false
-Black Check BlackQueene6trueWhiteKinge1false
-Black Check BlackQueene6trueWhiteKinge1false
-Black Check BlackQueene6trueWhiteKinge1false
-White Move WhiteBishopf1falsee2
-Black Move BlackQueene6truee4
-White Move WhitePawnh2falsetrueh4
-Black Capture WhitePawnh4truetrue
-Black Move BlackQueene4trueh4
-White Capture BlackQueenh4true
-White Move WhiteRookh1falseh4
-Black Capture WhitePawnc4truetrue
-Black Move BlackPawnd5truefalsec4
-White Move WhitePawnd4truefalsed5
-Black Move BlackBishopf8trueh6
-White Capture BlackPawnc4truefalse
-White Move WhiteRookh4truec4
-Black Move BlackBishoph6truef4
-White Capture BlackBishopf4true
-White Move WhiteRookc4truef4
-Black Move BlackBishopc8falsee6
-White Move WhiteRookf4truef5
-Black Capture WhitePawnd5truefalse
-Black Move BlackBishope6trued5
-White Capture BlackBishopd5true
-White Move WhiteRookf5trued5
-Black Move BlackRooka8falsed8
-White Move WhiteBishopc1falsed2
-Black Move BlackPawnc7falsetruec5
-White Capture BlackPawnc5truetrue
-White Move WhiteRookd5truec5
-Black Capture WhiteBishopd2true
-Black Move BlackRookd8trued2
-Black Check BlackRookd2trueWhiteKingd1false
-White Move WhiteBishope2trued3
-Black Capture WhiteBishopd3true
-Black Move BlackRookd2trued3
-White Move WhitePawnf2falsefalsef3
-Black Capture WhitePawnf3truefalse
-Black Move BlackRookd3truef3
-White Move WhiteKinge1falsed2
-Black Move BlackKinge8truef8
-White Move WhitePawng2falsefalseg3
-Black Capture WhitePawng3truefalse
-Black Move BlackRookf3trueg3
-Black Check BlackRookg3trueWhiteKingc3true
-White Move WhitePawnb2falsefalseb3
-Black Move BlackPawnb5truefalseb4
-White Move WhiteKingd2truec2
-Black Capture WhitePawnb3truefalse
-Black Move BlackRookg3trueb3
-White Move WhitePawna2falsefalsea3
-Black Capture WhitePawna3truefalse
-Black Move BlackRookb3truea3
-White Move WhiteKnightg1falseh3
-Black Move BlackKingf8trueg8
-White Move WhiteKnighth3truef4
-Black Move BlackKingg8trueh8
-White Capture BlackPawnh5truetrue
-White Move WhiteKnightf4trueh5
-Black Move BlackKingh8trueg8
-White Move WhiteKnighth5truef6
-White Check WhiteKnightf6trueBlackKingg8true
-White Check WhiteKnightf6trueBlackKingg8true
-White Check WhiteKnightf6trueBlackKingg8true
-White Check WhiteKnightf6trueBlackKingg8true
-White Check WhiteKnightf6trueBlackKingg8true
-White Check WhiteKnightf6trueBlackKingg8true
-White Check WhiteKnightf6trueBlackKingg8true
-White Check WhiteKnightf6trueBlackKingg8true
-White Check WhiteKnightf6trueBlackKingg8true
-White Check WhiteKnightf6trueBlackKingg8true
-White Check WhiteKnightf6trueBlackKingg8true
-White Check WhiteKnightf6trueBlackKingg8true
-White Check WhiteKnightf6trueBlackKingg8true
-Black Move BlackKingg8trueh8
-White Move WhiteKnightf6trueg8
-Black Move BlackKingh8trueh7
-White Move WhiteKnightg8trueh6
-Black Move BlackKingh7trueh8
-White Move WhiteRookc5trueg5
-Black Capture WhiteRooka1false
-Black Move BlackRooka3truea1
-White Move WhiteRookg5trueg6
-Black Capture WhiteKnightb1false
-Black Move BlackRooka1trueb1
-Black Check BlackPawnb4truefalseWhiteKingc3true
-White Move WhiteKingc2trued3
-Black Move BlackRookb1truec1
-White Move White Knight h6 true g8
-Black Move Black King h8 true h7
-White Move White Rook g6 true g4
-Black Move Black Pawn a5 true false a4
-White Move White Knight g8 true f6
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-Black Move Black King h7 true h6
-White Move White Knight f6 true g8
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-Black Move Black King h6 true h5
-White Move White Knight g8 true f6
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-Black Move Black King h5 true h6
-White Move White Knight f6 true g8
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-Black Move Black King h6 true h7
-White Move White Knight g8 true f6
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-White Check White Knight f6 true Black King h7 true
-Black Move Black King h7 true h6
-White Move White Knight f6 true g8
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-Black Move Black King h6 true h5
-White Move White Knight g8 true f6
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-Black Move Black King h5 true h6
-White Move White Knight f6 true g8
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-White Check White Knight g8 true Black King h6 true
-Black Move Black King h6 true h5
-White Move White Knight g8 true f6
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
-White Check White Knight f6 true Black King h5 true
+White
+14
+Black Rook a8 false
+Black Pawn a7 false false
+Black Pawn b7 false false
+White Knight g5 true
+Black Queen c7 true
+White Queen b8 true
+Black King h8 true
+White King g1 true
+Black Bishop f8 true
+White Bishop c4 true
+Black Pawn g7 false false
+White Pawn g2 false false
+Black Pawn h7 false false
+White Pawn h3 true false
+91
+White Move White Knight g1 false f3
+Black Move Black Knight g8 false f6
+White Move White Pawn e2 false true e4
+Black Move Black Pawn e7 false true e5
+White Move White Bishop f1 false c4
+Black Move Black Bishop f8 false c5
+White Move White Rook h1 false g1
+White Move White King e1 false h1
+Black Move Black Rook h8 false g8
+Black Move Black King e8 false h8
+White Move White Rook g1 true e1
+Black Move Black Rook g8 true e8
+White Capture Black Pawn e5 true true
+White Move White Knight f3 true e5
+Black Capture White Knight e5 true
+Black Move Black Rook e8 true e5
+White Move White Rook e1 true e3
+Black Capture White Pawn e4 true true
+Black Move Black Rook e5 true e4
+White Capture Black Rook e4 true
+White Move White Rook e3 true e4
+Black Move Black Bishop c5 true f8
+White Move White Knight b1 false c3
+Black Capture White Rook e4 true
+Black Move Black Knight f6 true e4
+White Capture Black Knight e4 true
+White Move White Knight c3 true e4
+Black Move Black Queen d8 false f6
+White Move White Pawn h2 false false h3
+Black Move Black Queen f6 true a6
+White Move White King h1 true g1
+Black Move Black Pawn f7 false true f5
+White Move White Pawn f2 false true f4
+Black Capture White Pawn a2 false false
+Black Move Black Queen a6 true a2
+White Move White Queen d1 false h5
+Black Capture White Rook a1 false
+Black Move Black Queen a2 true a1
+White Capture Black Pawn f5 true true
+White Move White Queen h5 true f5
+Black Capture White Bishop c1 false
+Black Move Black Queen a1 true c1
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+Black Check Black Queen c1 true White King g1 true
+White Move White King g1 true h2
+Black Capture White Pawn c2 false false
+Black Move Black Queen c1 true c2
+White Move White King h2 true g1
+Black Capture White Pawn b2 false false
+Black Move Black Queen c2 true b2
+White Move White Knight e4 true g5
+Black Capture White Pawn d2 false false
+Black Move Black Queen b2 true d2
+White Capture Black Pawn d7 false false
+White Move White Queen f5 true d7
+Black Capture White Pawn f4 true true
+Black Move Black Queen d2 true f4
+White Capture Black Pawn c7 false false
+White Move White Queen d7 true c7
+Black Move Black Queen f4 true d6
+White Capture Black Bishop c8 false
+White Move White Queen c7 true c8
+Black Move Black Queen d6 true c7
+White Capture Black Knight b8 false
+White Move White Queen c8 true b8

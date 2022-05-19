@@ -1,7 +1,8 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.PrintWriter;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.swing.*;
+import java.io.*;
 import java.util.ArrayList;
 
 public class Chess {
@@ -10,6 +11,7 @@ public class Chess {
     private ArrayList<PiecesLog> logs;
     public boolean trace;
     private Piece capturedPiece;
+    public Clip bgm;
 
     private static final PiecesName[] beginLayout = new PiecesName[] {
             PiecesName.Rook, PiecesName.Knight, PiecesName.Bishop,
@@ -77,6 +79,17 @@ public class Chess {
         }
         //Initial the rest
         capturedPiece = null;
+        //Initial the bgm
+        AudioInputStream ais;
+        try {
+            bgm = AudioSystem.getClip();
+            ais = AudioSystem.getAudioInputStream(new File("chess-bgm.wav"));
+            bgm.open(ais);
+            bgm.start();
+            bgm.loop(Clip.LOOP_CONTINUOUSLY);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     Chess() {
@@ -186,7 +199,7 @@ public class Chess {
     public Status tryPromotionPawn(Pawn pawn, String name) throws Exception {
         //Generate new piece
         Piece new_piece = newPiece(pawn.color, PiecesName.valueOf(name), pawn.location, true);
-        //Remove the pwan from the board
+        //Remove the pawn from the board
         pieces.remove(pawn);
         //Add new piece to the board
         pieces.add(new_piece);
@@ -389,7 +402,7 @@ public class Chess {
         Pawn pawn = getPromotionPawn();
         if(pawn != null) {
             if(trace)
-                System.out.println("tryNextTurns(): Before next turns, perform Pormotion Pawn.");
+                System.out.println("tryNextTurns(): Before next turns, perform Promotion Pawn.");
             status = new Status();
             status.add(new PiecesAlteration(
                     pawn,
@@ -685,6 +698,9 @@ public class Chess {
         //Task2-5-(4)
         if(file == null)
             file = "chess_save.txt";
+        if(!file.contains(".txt")){
+            JOptionPane.showMessageDialog(null,"并非文本文件","读取错误",JOptionPane.ERROR_MESSAGE);
+        }
         //Task2-1
         FileReader fr = new FileReader(file);
         BufferedReader br = new BufferedReader(fr);
@@ -695,12 +711,16 @@ public class Chess {
         if(line.indexOf("8x8") != 0) {
             br.close();
             fr.close();
+            JOptionPane.showMessageDialog(null,"棋盘并非8*8","读取错误",JOptionPane.ERROR_MESSAGE);
             throw new Exception("Chess board is not 8x8!");
         }
         //Turns
         line = br.readLine();
         //Will throw exception if color was invalid
         //Task2-2, Task5-3-(3)
+        if(!line.equals("White") && !line.equals("Black")){
+            JOptionPane.showMessageDialog(null,"缺少下一步行棋方","读取错误",JOptionPane.ERROR_MESSAGE);
+        }
         thisTurnColor = PiecesColor.valueOf(line);
         //Number of pieces
         //Task2-2,
@@ -712,13 +732,31 @@ public class Chess {
             String[] parms = br.readLine().split(" ");
             //Will throw exception if color was invalid
             //Task2-5-(2)
-            PiecesColor color = PiecesColor.valueOf(parms[0]);
+            PiecesColor color = null;
+            try{
+                color = PiecesColor.valueOf(parms[0]);
+            }catch (Exception e){
+                JOptionPane.showMessageDialog(null,"存在非黑白棋子","读取错误",JOptionPane.ERROR_MESSAGE);
+                System.exit(0);
+            }
             //Will throw exception if name was invalid
             //Task2-5-(2)
-            PiecesName name = PiecesName.valueOf(parms[1]);
+            PiecesName name = null;
+            try{
+                name = PiecesName.valueOf(parms[1]);
+            }catch (Exception e){
+                JOptionPane.showMessageDialog(null,"存在非合法棋子","读取错误",JOptionPane.ERROR_MESSAGE);
+                System.exit(0);
+            }
             //Will throw exception if the location is out of board
             //Task2-5-(5)
-            PiecesLocation loc = new PiecesLocation(parms[2]);
+            PiecesLocation loc = null;
+            try{
+                loc = new PiecesLocation(parms[2]);
+            }catch (Exception e){
+                JOptionPane.showMessageDialog(null,"存储步骤非法","读取错误",JOptionPane.ERROR_MESSAGE);
+                System.exit(0);
+            }
             //Will throw exception if the movement status is wrong
             boolean moved = Boolean.parseBoolean(parms[3]);
             //If this is a Pawn, there is another flag

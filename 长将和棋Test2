@@ -1,0 +1,147 @@
+8x8
+White
+11
+Black Rook b8 true
+Black Pawn a7 false false
+White Knight g5 true
+Black King h8 true
+White King g1 true
+Black Bishop f8 true
+White Bishop c4 true
+Black Pawn g7 false false
+White Pawn g2 false false
+Black Pawn h7 false false
+White Pawn h3 true false
+132
+White Move WhiteKnightg1falsef3
+Black Move BlackKnightg8falsef6
+White Move WhitePawne2falsetruee4
+Black Move BlackPawne7falsetruee5
+White Move WhiteBishopf1falsec4
+Black Move BlackBishopf8falsec5
+White Move WhiteRookh1falseg1
+White Move WhiteKinge1falseh1
+Black Move BlackRookh8falseg8
+Black Move BlackKinge8falseh8
+White Move WhiteRookg1truee1
+Black Move BlackRookg8truee8
+White Capture BlackPawne5truetrue
+White Move WhiteKnightf3truee5
+Black Capture WhiteKnighte5true
+Black Move BlackRooke8truee5
+White Move WhiteRooke1truee3
+Black Capture WhitePawne4truetrue
+Black Move BlackRooke5truee4
+White Capture BlackRooke4true
+White Move WhiteRooke3truee4
+Black Move BlackBishopc5truef8
+White Move WhiteKnightb1falsec3
+Black Capture WhiteRooke4true
+Black Move BlackKnightf6truee4
+White Capture BlackKnighte4true
+White Move WhiteKnightc3truee4
+Black Move BlackQueend8falsef6
+White Move WhitePawnh2falsefalseh3
+Black Move BlackQueenf6truea6
+White Move WhiteKingh1trueg1
+Black Move BlackPawnf7falsetruef5
+White Move WhitePawnf2falsetruef4
+Black Capture WhitePawna2falsefalse
+Black Move BlackQueena6truea2
+White Move WhiteQueend1falseh5
+Black Capture WhiteRooka1false
+Black Move BlackQueena2truea1
+White Capture BlackPawnf5truetrue
+White Move WhiteQueenh5truef5
+Black Capture WhiteBishopc1false
+Black Move BlackQueena1truec1
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+Black Check BlackQueenc1trueWhiteKingg1true
+White Move WhiteKingg1trueh2
+Black Capture WhitePawnc2falsefalse
+Black Move BlackQueenc1truec2
+White Move WhiteKingh2trueg1
+Black Capture WhitePawnb2falsefalse
+Black Move BlackQueenc2trueb2
+White Move WhiteKnighte4trueg5
+Black Capture WhitePawnd2falsefalse
+Black Move BlackQueenb2trued2
+White Capture BlackPawnd7falsefalse
+White Move WhiteQueenf5trued7
+Black Capture WhitePawnf4truetrue
+Black Move BlackQueend2truef4
+White Capture BlackPawnc7falsefalse
+White Move WhiteQueend7truec7
+Black Move BlackQueenf4trued6
+White Capture BlackBishopc8false
+White Move WhiteQueenc7truec8
+Black Move BlackQueend6truec7
+White Capture BlackKnightb8false
+White Move WhiteQueenc8trueb8
+White Capture BlackPawnb7falsefalse
+White Move WhiteQueenb8trueb7
+Black Move BlackQueenc7trued7
+White Move WhiteBishopc4trued3
+Black Move BlackQueend7truef7
+White Capture BlackQueenf7true
+White Move WhiteQueenb7truef7
+Black Move BlackRooka8falseb8
+White Move WhiteQueenf7trueg8
+White Check WhiteQueeng8trueBlackKingh8true
+White Check WhiteQueeng8trueBlackKingh8true
+White Check WhiteQueeng8trueBlackKingh8true
+White Check WhiteQueeng8trueBlackKingh8true
+White Check WhiteQueeng8trueBlackKingh8true
+White Check WhiteQueeng8trueBlackKingh8true
+White Check WhiteQueeng8trueBlackKingh8true
+White Check WhiteQueeng8trueBlackKingh8true
+White Check WhiteQueeng8trueBlackKingh8true
+White Check WhiteQueeng8trueBlackKingh8true
+White Check WhiteQueeng8trueBlackKingh8true
+White Check WhiteQueeng8trueBlackKingh8true
+White Check WhiteQueeng8trueBlackKingh8true
+White Check WhiteQueeng8trueBlackKingh8true
+Black Capture WhiteQueeng8true
+Black Move BlackKingh8trueg8
+White Move White Bishop d3 true c4
+White Check White Bishop c4 true Black King g8 true
+White Check White Bishop c4 true Black King g8 true
+White Check White Bishop c4 true Black King g8 true
+White Check White Bishop c4 true Black King g8 true
+White Check White Bishop c4 true Black King g8 true
+White Check White Bishop c4 true Black King g8 true
+White Check White Bishop c4 true Black King g8 true
+White Check White Bishop c4 true Black King g8 true
+White Check White Bishop c4 true Black King g8 true
+White Check White Bishop c4 true Black King g8 true
+White Check White Bishop c4 true Black King g8 true
+White Check White Bishop c4 true Black King g8 true
+White Check White Bishop c4 true Black King g8 true
+White Check White Bishop c4 true Black King g8 true
+Black Move Black King g8 true h8

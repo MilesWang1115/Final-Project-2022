@@ -122,7 +122,7 @@ public abstract class Piece {
         //Check result
         if(trace) {
             if(valid_loc.size() == 0)
-                System.out.println("findValidMove(): Freez piece: " + this.toString());
+                System.out.println("findValidMove(): Freeze piece: " + this.toString());
         }
         return valid_loc;
     }
@@ -152,6 +152,19 @@ public abstract class Piece {
                 break;
             case White:
                 fix = "_white.png";
+                break;
+        }
+        return name.toString().toLowerCase() + fix;
+    }
+
+    public String getPieceIconName2() {
+        String fix=".png";
+        switch(color) {
+            case Black:
+                fix = "-black.png";
+                break;
+            case White:
+                fix = "-white.png";
                 break;
         }
         return name.toString().toLowerCase() + fix;
